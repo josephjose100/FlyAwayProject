@@ -43,8 +43,13 @@ public class Fileinput {
 					list.add(f1.getName());
 				}
 				Collections.sort(list);
-				System.out.println("The names of files in ascending order is ");
-				System.out.println(list);  
+				if(list.isEmpty()) {
+					System.out.println("There are no files present");
+				}
+				else{
+					System.out.println("The names of files in ascending order is ");
+				    System.out.println(list);
+				}
 				list.clear();
 		        break;
 		    
