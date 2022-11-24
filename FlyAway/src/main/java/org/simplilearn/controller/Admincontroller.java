@@ -31,7 +31,7 @@ public class Admincontroller extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
-		if(request.getRequestURI().equals("/FlyAway/register")) {
+		if(request.getRequestURI().equals("/check/register")) {
 			response.setContentType("text/html");
 			PrintWriter out=response.getWriter();
 			String adminId=request.getParameter("adminId");
@@ -58,7 +58,7 @@ public class Admincontroller extends HttpServlet {
 		
 		
 		
-		if(request.getRequestURI().equals("/FlyAway/login")) {
+		if(request.getRequestURI().equals("/check/login")) {
 			
 			response.setContentType("text/html");
 			PrintWriter out=response.getWriter();
@@ -85,7 +85,7 @@ public class Admincontroller extends HttpServlet {
 			
 		}
 		
-		if(request.getRequestURI().equals("/FlyAway/change")) {
+		if(request.getRequestURI().equals("/check/change")) {
 			
 			
 			

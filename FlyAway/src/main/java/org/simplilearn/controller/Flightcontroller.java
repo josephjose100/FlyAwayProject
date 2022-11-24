@@ -27,7 +27,7 @@ public class Flightcontroller extends HttpServlet {
 			throws ServletException, IOException {
 		
 		
-		if(request.getRequestURI().equals("/FlyAway/all")) {
+		if(request.getRequestURI().equals("/check/all")) {
 			
 			response.setContentType("text/html");
 			PrintWriter out=response.getWriter();
@@ -37,7 +37,7 @@ public class Flightcontroller extends HttpServlet {
 			rd.forward(request, response);
 			}
 		
-         if(request.getRequestURI().equals("/FlyAway/airlines")) {
+         if(request.getRequestURI().equals("/check/airlines")) {
 			
 			response.setContentType("text/html");
 			PrintWriter out=response.getWriter();
@@ -48,7 +48,7 @@ public class Flightcontroller extends HttpServlet {
 				
 		}
 		
-         if(request.getRequestURI().equals("/FlyAway/srcDestination")) {
+         if(request.getRequestURI().equals("/check/srcDestination")) {
  			
  			response.setContentType("text/html");
  			PrintWriter out=response.getWriter();
@@ -59,7 +59,7 @@ public class Flightcontroller extends HttpServlet {
  			
  		}
          
-         if(request.getRequestURI().equals("/FlyAway/delete")) {
+         if(request.getRequestURI().equals("/check/delete")) {
         	 
         	 response.setContentType("text/html");
         	 PrintWriter out=response.getWriter();
@@ -80,7 +80,7 @@ public class Flightcontroller extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
        
-		if (request.getRequestURI().equals("/FlyAway/search")) {
+		if (request.getRequestURI().equals("/check/search")) {
 
 			response.setContentType("text/html");
 			PrintWriter out = response.getWriter();
@@ -114,7 +114,7 @@ public class Flightcontroller extends HttpServlet {
 			}
 		}
 		
-		if (request.getRequestURI().equals("/FlyAway/book")) {
+		if (request.getRequestURI().equals("/check/book")) {
 			
 			response.setContentType("text/html");
 			PrintWriter out=response.getWriter();
@@ -136,7 +136,7 @@ public class Flightcontroller extends HttpServlet {
 			rd.forward(request, response);
 		}
 		
-		if (request.getRequestURI().equals("/FlyAway/insert")) {
+		if (request.getRequestURI().equals("/check/insert")) {
 			
 			response.setContentType("text/html");
 			PrintWriter out=response.getWriter();
@@ -164,7 +164,7 @@ public class Flightcontroller extends HttpServlet {
 			
 		}
 		
-		if (request.getRequestURI().equals("/FlyAway/details")) {
+		if (request.getRequestURI().equals("/check/details")) {
 			
 			response.setContentType("text/html");
 			PrintWriter out=response.getWriter();
